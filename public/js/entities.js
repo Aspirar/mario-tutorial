@@ -8,7 +8,7 @@ export async function createMario() {
     const sprite = await loadMarioSprite();
 
     const mario = new Entity();
-    mario.size.set(32, 32);
+    mario.size.set(16, 16);
 
     mario.addTrait(new Go());
     mario.addTrait(new Jump());
